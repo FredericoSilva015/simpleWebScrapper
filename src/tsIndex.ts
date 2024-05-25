@@ -51,6 +51,6 @@ axios(url)
     });
     console.log(article);
   })
-  .catch((err) => console.log(err));
+  .catch((err: unknown) => console.log(err));
 
 app.listen(PORT, () => console.log(`Server running on PORT: ${PORT}`));

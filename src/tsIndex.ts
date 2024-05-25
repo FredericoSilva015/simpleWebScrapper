@@ -1,6 +1,6 @@
 // this is a Typescript version of the same code
-import * as cheerio from 'cheerio';
 import express from 'express';
+import { load } from 'cheerio';
 import axios from 'axios';
 
 const PORT = 8000;
@@ -32,7 +32,7 @@ const urlBaseSet = (url: string, base: string) => {
 axios(url)
   .then((response) => {
     const html = response.data;
-    const $ = cheerio.load(html);
+    const $ = load(html);
     const article: { title: string; link: string }[] = [];
 
     /**

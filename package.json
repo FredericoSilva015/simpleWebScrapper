@@ -5,8 +5,8 @@
   "description": "Typescript version of tutorial from Ania Kubów ",
   "main": "index.js",
   "scripts": {
-    "jsStart": "nodemon index.js",
-    "tsStart": "nodemon build/tsIndex.js"
+    "jsStart": "nodemon index",
+    "tsStart": "nodemon build/tsIndex"
   },
   "author": "",
   "license": "ISC",
